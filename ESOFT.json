@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-1S-A",
+        "imgCurso": ""
+    },
+    {
+        "id": 2,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-1S-B",
+        "imgCurso": ""
+    },
+    {
+        "id": 3,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-1S-C",
+        "imgCurso": ""
+    },
+    {
+        "id": 4,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-1S-D",
+        "imgCurso": ""
+    },
+    {
+        "id": 5,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-3S-A",
+        "imgCurso": ""
+    },
+    {
+        "id": 6,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-3S-B",
+        "imgCurso": ""
+    },
+    {
+        "id": 7,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-3S-C",
+        "imgCurso": ""
+    },
+    {
+        "id": 8,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-3S-D",
+        "imgCurso": ""
+    },
+    {
+        "id": 9,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-5S-A",
+        "imgCurso": ""
+    },
+    {
+        "id": 10,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-5S-B",
+        "imgCurso": ""
+    },
+    {
+        "id": 11,
+        "curso": "Engenharia de Software",
+        "sala": "ESOFT-7S-A",
+        "imgCurso": ""
+    }
+]

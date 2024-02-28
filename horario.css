@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --background-card: #181919;
+    --background-button: #6412A2;
+    --background-icone: #70223E;
+    --color: #fff;
+    --terciary-color-font: rgba(255,255,255, 0.8);
+    --night-color: rgba(255,255,255, 0.4);
+    --background-horario-fundo: rgba(34, 29,51, 0.3);
+    --background: #070C0A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+@keyframes circle-in-center {
+    from {
+      clip-path: circle(0%);
+      background: var(--background-button);
+    }
+    to {
+      clip-path: circle(125%);
+    }
+  }
+  
+body{
+        animation: 6s cubic-bezier(.25, 1, .30, 1) circle-in-center both;
+}    
+  
+
+.hours-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    margin-top: 125px;
+}
+
+.max-container{
+    margin-top: -80px;
+}
+
+.container-hours {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+}
+
+.text-container-hours{
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.text-container-hours h1{
+    font-size: clamp(1.6rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--color);
+}
+
+.text-container-hours-ads h1{
+    font-size: clamp(1.6rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--color);
+}
+
+.card-hours{
+    background: var(--background-card);
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  all .5s linear;
+}
+
+.card-hours:hover{
+    background: #6412A2;
+    transform: translateY(-5%);
+    transition:  all .5s linear;
+}
+
+
+#hours{
+    margin-top: 65px;
+}
+
+.container-hours .card-hours:active{
+    background: #6412A2;
+    transform: translateY(-5%);
+    transition:  all .5s linear;
+}
+
+.container-hours .card-hours:active .elements-card .button-elements button{
+    background: var(--background-card);
+    color: var(--color);
+}
+
+.container-hours .card-hours:active .elements-card .img-card span{
+    background: var(--background-card);
+}
+
+.container-hours .card-hours:active .elements-card .text-salas span{
+    color: var(--color);
+}
+
+.container-hours .card-hours .elements-card .img-card{
+    margin-bottom: 15px;
+}
+
+.container-hours .card-hours .elements-card .img-card span{
+    font-size:27px;
+    padding: 5px 8px;
+    background: var(--background-icone);
+    border-radius: 50%;
+}
+
+.container-hours .card-hours .elements-card .img-card i{
+    color: var(--color);
+}
+
+.container-hours .card-hours .elements-card .text-salas{
+    margin-bottom: 15px;
+}
+
+.container-hours .card-hours .elements-card .text-salas span{
+    font-size: clamp(1.5rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--night-color);
+    letter-spacing: 1px;
+}
+
+.container-hours .card-hours .elements-card .button-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-hours .card-hours .elements-card .button-elements button{
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--background-button);
+    color: var(--terciary-color-font);
+    font-size: clamp(1rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    transition: all .2s linear;
+}
+
+.card-hours .elements-card .button-elements button:hover{
+    background: var(--background-card);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.container-hours .card-hours:hover .elements-card .button-elements button{
+    background: var(--background-card);
+}
+
+.container-hours .card-hours:hover .elements-card .img-card span{
+    background: var(--background-card);
+}
+
+.container-hours .card-hours:hover .elements-card .text-salas span{
+    color: var(--color);
+}
+
+
+
+
+/* ads */
+.hours-container-ads{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    margin-top: 125px;
+}
+
+.max-container-ads{
+    margin-top: -80px;
+}
+
+.container-hours-ads {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+}
+
+.text-container-hours-ads{
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.text-container-hours-ads h1{
+    font-size: clamp(1.6rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.card-hours-ads{
+    background: var(--background-card);
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:  all .5s linear;
+}
+
+.card-hours-ads:hover{
+    background: #6412A2;
+    transform: translateY(-5%);
+    transition:  all .5s linear;
+}
+
+
+.container-hours-ads .card-hours-ads:active{
+    background: #6412A2;
+    transform: translateY(-5%);
+    transition:  all .5s linear;
+}
+
+.container-hours-ads .card-hours-ads:active .elements-card-ads .button-elements-ads button{
+    background: var(--background-card);
+    color: var(--color);
+}
+
+.container-hours-ads .card-hours-ads:active .elements-card-ads .img-card-ads span{
+    background: var(--background-card);
+}
+
+.container-hours-ads .card-hours-ads:active .elements-card-ads .text-salas-ads span{
+    color: var(--color);
+}
+
+.container-hours-ads .card-hours-ads .elements-card-ads .img-card-ads{
+    margin-bottom: 15px;
+}
+
+.container-hours-ads .card-hours-ads .elements-card-ads .img-card-ads span{
+    font-size:27px;
+    padding: 5px 8px;
+    background: var(--background-icone);
+    border-radius: 50%;
+}
+
+.container-hours-ads .card-hours-ads .elements-card-ads .img-card-ads i{
+    color: var(--color);
+}
+
+.container-hours-ads .card-hours-ads .elements-card-ads .text-salas-ads{
+    margin-bottom: 15px;
+}
+
+.container-hours-ads .card-hours-ads .elements-card-ads .text-salas-ads span{
+    font-size: clamp(1.5rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--night-color);
+    letter-spacing: 1px;
+}
+
+.container-hours-ads .card-hours-ads .elements-card-ads .button-elements-ads{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-hours-ads .card-hours-ads .elements-card-ads .button-elements-ads button{
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    background: var(--background-button);
+    color: var(--terciary-color-font);
+    font-size: clamp(1rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    transition: all .2s linear;
+}
+
+.card-hours-ads .elements-card-ads .button-elements-ads button:hover{
+    background: var(--background-card);
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.container-hours-ads .card-hours-ads:hover .elements-card-ads .button-elements-ads button{
+    background: var(--background-card);
+}
+
+.container-hours-ads .card-hours-ads:hover .elements-card-ads .img-card-ads span{
+    background: var(--background-card);
+}
+
+.container-hours-ads .card-hours-ads:hover .elements-card-ads .text-salas-ads span{
+    color: var(--color);
+}
+
+/* pagina horario */
+
+.hour-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;;
+}
+
+.hour-content .name-curse h1{
+    font-size: clamp(2rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--color);
+}
+
+.hour-content .sala-curse h3{
+    font-size: clamp(1.5rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: var(--night-color);
+    margin-bottom: 15px;
+}
+
+.card-horario .img-horario {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.card-horario .img-horario img {
+    object-fit: cover;
+    width: 50%; 
+    height: 30%; 
+    max-width: 100%; 
+    border-radius: 10px;
+}
+
+.card-horario .button-card{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-horario .button-card button{
+    padding: 10px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-horario .button-card .voltar-pagina button{
+    background: var(--background-button);
+    color: var(--color);
+    font-size: clamp(1rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.card-horario .button-card .baixar-imagem button{
+    background: var(--background-icone);
+    color: var(--color);
+    font-size: clamp(1rem, 1.0774rem + 3.7936vw, 0.5rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+
+

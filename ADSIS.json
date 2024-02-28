@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "sala": "ADSIS-1S-A",
+        "imgCurso": ""
+    },
+    {
+        "id": 2,
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "sala": "ADSIS-1S-B",
+        "imgCurso": ""
+    },
+    {
+        "id": 3,
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "sala": "ADSIS-3S-A",
+        "imgCurso": ""
+    },
+    {
+        "id": 4,
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "sala": "ADSIS-3S-B",
+        "imgCurso": ""
+    },
+    {
+        "id": 5,
+        "curso": "Análise e Desenvolvimento de Sistemas",
+        "sala": "ADSIS-5S-A",
+        "imgCurso": ""
+    }
+]
